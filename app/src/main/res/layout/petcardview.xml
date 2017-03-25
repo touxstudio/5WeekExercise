@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:layout_margin = "15dp"
+    card_view:cardCornerRadius = "@dimen/corners">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <ImageView
+            android:id="@+id/imPic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/image2"
+            android:scaleType="centerCrop"
+           />
+
+        <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:stretchColumns="1"
+            android:padding="10dp"
+            >
+        <TableRow>
+
+            <ImageView
+                android:id="@+id/blackBone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/blackbone"
+                android:adjustViewBounds="true"
+                android:layout_alignParentLeft="true"
+                android:paddingRight="10dp"
+
+                />
+
+            <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="@string/pName"
+                android:layout_alignParentRight="true"
+                />
+
+
+            <ImageButton
+                android:id="@+id/brownbone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/bones"
+                android:background="@null"
+                android:adjustViewBounds="true"
+                android:layout_alignParentRight="true"
+                android:paddingRight="10dp"
+                />
+
+
+            <TextView
+                android:id="@+id/tvRate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="@string/pName"
+                android:layout_alignParentLeft="true"/>
+
+
+
+        </TableRow>
+</TableLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
